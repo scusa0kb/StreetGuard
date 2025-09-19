@@ -1,0 +1,35 @@
+{
+  "items": [
+    {
+      "id": "occ-fortaleza-1",
+      "lat": -3.7304512,
+      "lng": -38.5217989,
+      "description": "Ocorrência na Av. Beira Mar",
+      "category": "assalto",
+      "radius_m": 300,
+      "occurred_at": "2025-09-19T13:56:00Z",
+      "severity": "alta",
+      "tags": ["arma", "moto"]
+    },
+    {
+      "id": "occ-sp-1",
+      "lat": -23.55673,
+      "lng": -46.66232,
+      "description": "Assalto reportado na Paulista",
+      "category": "assalto",
+      "radius_m": 400,
+      "occurred_at": "2025-09-19T13:50:00Z",
+      "severity": "media"
+    },
+    {
+      "id": "occ-bh-1",
+      "lat": -19.91907,
+      "lng": -43.93857,
+      "description": "Blitz em avenida central",
+      "category": "blitz",
+      "radius_m": 250,
+      "occurred_at": "2025-09-19T13:40:00Z",
+      "severity": "baixa"
+    }
+  ]
+}
