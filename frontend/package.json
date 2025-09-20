@@ -14,13 +14,17 @@
     "react-leaflet": "^4.2.1",
     "react-leaflet-cluster": "^3.1.1",
     "react-scripts": "^5.0.1",
-    "socket.io-client": "^4.8.1"
+    "socket.io-client": "^4.8.1",
+    "homepage": "https://scusa0kb.github.io/streetguard"
+
   },
   "scripts": {
-    
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview --strictPort --port 4173"
+    "build": "vite build", 
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "browserslist": {
     "production": [
