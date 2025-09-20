@@ -14,16 +14,20 @@ import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import { CATEGORIES } from "./config/categories";
 import MapWorldAlerts from "./map/MapWorldAlerts";
+import "leaflet/dist/leaflet.css";
+import L from "leaflet";
 
 
 
+import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
+import markerIcon from "leaflet/dist/images/marker-icon.png";
+import markerShadow from "leaflet/dist/images/marker-shadow.png";
 
-// Corrige ícone do Leaflet (CRA/Webpack)
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
-  iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
-  iconUrl: require("leaflet/dist/images/marker-icon.png"),
-  shadowUrl: require("leaflet/dist/images/marker-shadow.png"),
+  iconRetinaUrl: markerIcon2x,
+  iconUrl: markerIcon,
+  shadowUrl: markerShadow,
 });
 
 const BR_CENTER = [-14.235, -51.9253];
@@ -116,7 +120,6 @@ function makeClusterIcon(cluster, mode) {
 }
 
 const API_URL = import.meta.env.VITE_API_BASE_URL;
-
 export default function App() {
   // Tema
   const [mode, setMode] = useState("light");

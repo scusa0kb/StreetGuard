@@ -296,3 +296,15 @@
 .compact-desc {
   color: #374151; font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
+html, body, #root { height: 100%; }
+.app-root {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: #0f1115;
+}
+.map-root {
+  height: 100vh;
+  width: 100vw;
+}
