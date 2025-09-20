@@ -115,7 +115,7 @@ function makeClusterIcon(cluster, mode) {
   });
 }
 
-const API_URL = process.env.REACT_APP_BACKEND_URL; // opcional (tempo real / persistência)
+const API_URL = import.meta.env.VITE_API_BASE_URL;
 
 export default function App() {
   // Tema
